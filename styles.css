@@ -1,0 +1,181 @@
+/* styles.css */
+/* Paleta de cores: 
+.color1 { #5d732b };
+.color2 { #758b42 };
+.color3 { #8da358 };
+.color4 { #a5bb6f };
+.color5 { #bdd385 }; */
+
+/* Estilo geral do corpo do site */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #758b42; /* .color2 */
+  color: white; /* Mudar a cor do texto padrão para branco */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #5d732b; /* .color1 */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Remover margem do título no cabeçalho */
+header h1 {
+  margin: 0;
+}
+
+/* Estilo da navegação principal */
+nav {
+  background-color: #758b42; /* .color2 */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo dos itens da lista de navegação */
+nav ul li {
+  margin: 0;
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Cor de fundo dos links ao passar o mouse */
+nav ul li a:hover {
+  background-color: #8da358; /* .color3 */
+}
+
+/* Estilo das seções */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #a5bb6f; /* .color4 */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white; /* Texto em branco para contraste */
+  max-width: 800px; /* Limitar a largura para melhor legibilidade */
+}
+
+/* Remover margem do título da seção */
+section h2 {
+  margin-top: 0;
+  color: white; /* Título em branco */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #5d732b; /* .color1 */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+/* Estilo do botão no rodapé */
+footer button {
+  background-color: #a5bb6f; /* .color4 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Cor de fundo do botão ao passar o mouse */
+footer button:hover {
+  background-color: #8da358; /* .color3 */
+}
+
+/* Estilo do Formulário de Contato */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo dos rótulos do formulário */
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; /* Rótulos em branco */
+}
+
+/* Estilo dos inputs e textarea do formulário */
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #bdd385; /* .color5 */
+  color: #333; /* Texto dos inputs em preto para legibilidade */
+}
+
+/* Estilo do botão do formulário */
+form button {
+  background-color: #5d732b; /* .color1 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Cor de fundo do botão do formulário ao passar o mouse */
+form button:hover {
+  background-color: #758b42; /* .color2 */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul li a {
+    padding: 8px;
+  }
+
+  footer button,
+  form button {
+    padding: 8px 16px;
+  }
+}
